@@ -1,0 +1,16 @@
+{
+  "name": "web-consumption",
+  "version": "1.0.0",
+  "description": "testing wasm direct consumption",
+  "main": "index.js",
+  "scripts": {
+    "compile:rust": "wasm-pack build --target web"
+  },
+  "keywords": [
+    "wasm",
+    "test",
+    "direct",
+    "web"
+  ],
+  "author": "Marco Beier"
+}
