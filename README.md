@@ -2,7 +2,7 @@
 
 Simple demo repository where I went through the [MDN article](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm) on Rust to WASM compilation.
 
-## A few steps
+## Some steps
 
 Quick reminder to myself regarding a few important steps.
 
@@ -14,13 +14,15 @@ This differs to an executable. More info [here](https://doc.rust-lang.org/refere
 cargo new --lib hello-wasm
 ```
 
-### Build for Web use (direct)
+### Build
+
+#### for web use (direct)
 
 ```console
 wasm-pack build --target web
 ```
 
-### Build for NPM package use
+#### or npm package use
 
 The resulting package folder (pkg) can then be linked as globally available package via `npm link`.
 
@@ -28,7 +30,9 @@ The resulting package folder (pkg) can then be linked as globally available pack
 wasm-pack build --target bundler
 ```
 
-or directly `cd` into the corresponding _consumption_ packages and execute:
+#### or ... just
+
+... directly `cd` into the corresponding _consumption_ packages and execute:
 
 ```console
 npm run compile:rust
